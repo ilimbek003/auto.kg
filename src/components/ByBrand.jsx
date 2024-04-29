@@ -12,6 +12,9 @@ const ByBrand = () => {
               <img src={el.img} />
             </div>
           ))}
+          <div className="brand">
+            <p>Еще</p>
+          </div>
         </div>
       </div>
     </div>

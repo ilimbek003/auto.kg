@@ -1,5 +1,19 @@
 @import "./App.css";
 
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
 @font-face {
   font-family: Gilroy;
   src: url("../fonts/Gilroy-Thin.ttf");
@@ -83,12 +97,36 @@
   src: url("../fonts/Rubik-ExtraBold.ttf");
   font-weight: 800;
 }
+.custom-button.block {
+  width: 100%;
+}
 
+.blink-animate:before {
+  margin-left: -30px;
+  content: " ";
+  width: 30px;
+  height: 300px;
+  background: #fff;
+  animation-delay: 50ms;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  transition: all 0.1s;
+  animation-name: slideme;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Gilroy, Rubik, sans-serif;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }
 body {
   overflow-x: hidden;
@@ -230,4 +268,112 @@ ul li a:hover::before {
   width: 100%;
   height: 700px;
   position: relative;
+}
+
+#footer {
+  margin-top: 100px;
+  padding: 40px 0 40px 0;
+  background: #1e1e1e;
+  background-size: cover;
+  position: relative;
+}
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+#footer .container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("./../img/map.png") no-repeat 75%;
+  background-size: 55%;
+}
+.footer-all h1 {
+  color: #fff;
+}
+.footer-all {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacts-form-wrap {
+  position: relative;
+  z-index: 5;
+  width: 35%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  padding: 12px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.footer label {
+  display: block;
+  margin: 20px 0 8px 0;
+  color: #7b7979;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 50px;
+  background: transparent url("./../img/btna.svg") no-repeat 50%;
+  background-size: 100%;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer .custom-button {
+  display: flex;
+  margin: 30px auto 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  position: relative;
+}
+.hpone {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.dann {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 55%;
 }

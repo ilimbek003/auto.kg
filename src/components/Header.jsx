@@ -17,7 +17,7 @@ const Header = () => {
                 <NavLink to="/about">О нас</NavLink>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="/contacts">Контакты</a>
               </li>
             </ul>
           </div>

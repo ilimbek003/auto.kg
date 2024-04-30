@@ -7,6 +7,7 @@ import BodyWork from "./pages/BodyWork";
 import Main from "./components/Main";
 import About from "./pages/About";
 import Auto from "./pages/Auto";
+import Contacts from "./pages/Contacts";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<MainBlock />} />
         <Route path="/body-work" element={<BodyWork />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/marks" element={<Auto />} />
       </Routes>
       <Footer />

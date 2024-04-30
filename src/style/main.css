@@ -1,4 +1,5 @@
 .about-company {
+  margin-bottom: 100px;
   display: flex;
   gap: 5rem;
   align-items: center;
@@ -68,6 +69,11 @@
   min-height: 100vh;
   background: url("../img/about-bg.aa8e8b6d.jpg") no-repeat 50% 100% / cover;
 }
+.page-header.contact-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/contacts.png") no-repeat 50% 100% / cover;
+}
 .page-header:before {
   content: "";
   position: absolute;
@@ -75,4 +81,40 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+.hone{
+  color: #000;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+}
+.hponex{
+  margin: 15px 15px;
+}
+.hponex span{
+  margin-left: 4px;
+  color: #000;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+}
+.contacts a {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.contacts-wrap {
+  background: url("./../img/contact.jpg") no-repeat 50%;
+  background-size: cover;
+  padding: 100px 0;
+}
+.contacts-text {
+  margin-top: -30px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }

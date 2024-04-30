@@ -30,6 +30,7 @@ const AboutUs = () => {
           </div>
           <div>
             <img src={img} alt="" />
+            
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
   z-index: 122;
   color: #fff;
+  background: rgb(0, 0, 0, 0.2);
 }
 .slider_img {
   position: relative;
@@ -124,7 +125,7 @@
   grid-auto-flow: dense;
   cursor: pointer;
 }
-.imgage{
+.imgage {
   width: 100%;
   border-radius: 5px;
 }

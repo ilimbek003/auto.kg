@@ -41,7 +41,6 @@
 .whyTurest .turestGrid .turest {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  align-items: center;
   color: #fff !important;
 }
 
@@ -57,4 +56,23 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
+}
+
+.page-header {
+  padding: 350px 0 240px;
+  position: relative;
+}
+
+.page-header.about-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/about-bg.aa8e8b6d.jpg") no-repeat 50% 100% / cover;
+}
+.page-header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

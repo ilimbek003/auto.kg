@@ -195,6 +195,12 @@ ul li a:hover::before {
   position: relative;
   padding: 100px 0 40px 0;
 }
+.title_about {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1;
+}
 .ttitle:before {
   content: "";
   float: left;
@@ -307,8 +313,8 @@ ul li a:hover::before {
   cursor: pointer;
 }
 
-.about-company_btn{
-  background: url("../img/btn-prymari.svg")!important;
+.about-company_btn {
+  background: url("../img/btn-prymari.svg") !important;
 }
 
 .blink-animate {
@@ -446,7 +452,7 @@ button {
   width: 55%;
   margin: 10px 0 0 0;
 }
-.span{
+.span {
   font-weight: bolder;
 }
 .icon {

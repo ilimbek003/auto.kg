@@ -5,28 +5,19 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <nav className="nav">
+          <NavLink to="/" className="logo">
+            auto.kg
+          </NavLink>
           <div className="nav_left">
-            <NavLink to="/" className="logo">
-              auto.kg
-            </NavLink>
             <ul>
               <li>
-                <a href="#">Поиск авто</a>
+                <NavLink to="/marks">Поиск авто</NavLink>
               </li>
               <li>
-                <a href="#">Авто в наличии</a>
-              </li>
-              <li>
-                <a href="#">О нас</a>
+                <NavLink to="/about">О нас</NavLink>
               </li>
               <li>
                 <a href="#">Контакты</a>
-              </li>
-              <li>
-                <a href="#">Аукцион</a>
-              </li>
-              <li>
-                <a href="#">Для клиентов</a>
               </li>
             </ul>
           </div>

@@ -31,40 +31,43 @@ export default function Footer() {
                 Отправить
               </button>
             </div>
-            <div className="dann">
-              <div className="hpone">
-                <div
-                  style={{ display: "flex", gap: "10px", marginLeft: "-30px" }}
-                >
-                  {" "}
-                  <MdOutlinePhoneInTalk color="red" size={"25px"} />
-                  <a href="">+996 (554) 888 484</a>
+            <div className="dann_with">
+              <div className="dann">
+                <div className="hpone">
+                  <MdOutlinePhoneInTalk
+                    color="red"
+                    size={"25px"}
+                    className="icon"
+                  />
+                  <div>
+                    <a href="">+996 (554) 888 484</a>
+                    <a href="">+996 (554) 888 484</a>
+                    <a href="">+996 (554) 888 484</a>
+                    <a href="">+996 (554) 888 484</a>
+                  </div>
                 </div>
-                <a href="">+996 (554) 888 484</a>
-                <a href="">+996 (554) 888 484</a>
-                <a href="">+996 (554) 888 484</a>
-              </div>
-              <div className="hpone">
-                <div
-                  style={{ display: "flex", gap: "10px", marginLeft: "-30px" }}
-                >
-                  <RiTimerLine color="red" size={"25px"} />
-                  <a href="">Пн-Пт 08:00-19:00</a>
+                <div className="hpone">
+                  <RiTimerLine color="red" size={"25px"} className="icon" />
+                  <div>
+                    <a href="">Пн-Пт 08:00-19:00</a>
+                    <a href="">Сб 08:00-16:00</a>
+                    <a href="">Вс Выходной</a>
+                  </div>
                 </div>
-                <a href="">Сб 08:00-16:00</a>
-                <a href="">Вс Выходной</a>
               </div>
-              <div
-                className=""
-                style={{ display: "flex",gap:"80px"}}
-              >
-                <div
-                  style={{ display: "flex", gap: "10px", marginLeft: "-30px",marginTop:"20px" }}
-                >
-                  <MdOutlineMarkEmailRead color="red" size={"25px"} />
+              <div className="dann">
+                <div className="hpone">
+                  <MdOutlineMarkEmailRead
+                    color="red"
+                    size={"25px"}
+                    className="icon"
+                  />
                   <a href="">kutso11alty@gmail.com</a>
                 </div>
-             
+                <div className="hpone">
+                  <IoLocationSharp color="red" size={"25px"} className="icon" />
+                  <a href="">Бишкек, ул. Суюмбаева 43 офис 4</a>
+                </div>
               </div>
             </div>
           </div>

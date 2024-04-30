@@ -41,7 +41,7 @@ const Main = () => {
         {data.map((el, indx) => (
           <div className="slider_img" key={indx}>
             <div className="flag-canada"></div>
-            <img className="img" src={el.img} />
+            <img className="img" src={el.img} /> 
             <div class="flag-united-state"></div>
             <div className="container position">
               <h6 className="create" style={{ width: "60%" }}>

@@ -72,6 +72,16 @@
   grid-auto-flow: dense;
 }
 
+.brand_wrap_active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 22px;
+  grid-auto-flow: dense;
+  overflow-y: hidden;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
 .brand {
   display: flex;
   gap: 6px;
@@ -91,4 +101,30 @@
 
 .brand:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.box-wrap {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: -2px -2px 5px rgba(30, 30, 30, 0.14),
+    2px 2px 5px rgba(30, 30, 30, 0.14);
+  border-radius: 5px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 22px;
+  grid-auto-flow: dense;
+}
+
+.box-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: 22px;
+  grid-auto-flow: dense;
+  cursor: pointer;
+}
+.imgage{
+  width: 100%;
+  border-radius: 5px;
 }

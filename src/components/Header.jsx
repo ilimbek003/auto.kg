@@ -1,12 +1,14 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
         <nav className="nav">
           <div className="nav_left">
-            <h1 className="logo">auto.kg</h1>
+            <NavLink to="/" className="logo">
+              auto.kg
+            </NavLink>
             <ul>
               <li>
                 <a href="#">Поиск авто</a>

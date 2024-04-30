@@ -1,16 +1,21 @@
 import React from "react";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import ByBrand from "./components/ByBrand";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import MainBlock from "./pages/Main/MainBlock";
+import BodyWork from "./pages/BodyWork";
+import Main from "./components/Main";
 
 const App = () => {
   return (
     <div>
       <Header />
       <Main />
-      <ByBrand />
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<MainBlock />} />
+        <Route path="/body-work" element={<BodyWork />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

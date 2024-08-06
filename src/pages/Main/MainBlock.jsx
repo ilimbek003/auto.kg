@@ -4,12 +4,12 @@ import Bodywork from "../../components/Bodywork";
 import AboutCompany from "../../components/AboutCompany";
 import Main from "../../components/Main";
 
-const MainBlock = () => {
+const MainBlock = ({ cars, brands }) => {
   return (
     <div>
       <Main />
-      <ByBrand />
-      <Bodywork />
+      <ByBrand brands={brands} />
+      <Bodywork cars={cars} />
       <AboutCompany />
     </div>
   );

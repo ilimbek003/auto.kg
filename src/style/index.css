@@ -195,6 +195,9 @@ ul li a:hover::before {
   position: relative;
   padding: 100px 0 40px 0;
 }
+.one{
+  color: #fff;
+}
 .title_about {
   color: #fff;
   font-size: 75px;

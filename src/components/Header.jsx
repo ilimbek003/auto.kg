@@ -21,7 +21,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <button className="plesonal-btn">Личный кабинет</button>
+          <button className="plesonal-btn" style={{width:"180px"}}>На связи</button>
         </nav>
       </div>
     </div>

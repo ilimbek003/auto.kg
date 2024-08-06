@@ -9,10 +9,9 @@ export default function Footer() {
     <div id="footer">
       <div className="container">
         <div className="footer">
-          <div className="footer-all">
-            <div className="ttitle"></div>
-            <h1>Оставайтесь на связи</h1>
-          </div>
+          <h1 className="ttitle one">
+            Оставайтесь на связи
+          </h1>
           <div className="row">
             <div className="contacts-form-wrap">
               <label>Номер телефона</label>

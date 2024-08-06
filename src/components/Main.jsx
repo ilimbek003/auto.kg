@@ -7,8 +7,8 @@ const data = [
   {
     id: 1,
     img: img,
-    title: "AutoCanada",
-    text: "AutoCanada Возьми руль в свои руки, без промедления!",
+    title: "Auto.kg",
+    text: "Auto.kg Возьми руль в свои руки, без промедления!",
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ const data = [
     id: 1,
     img: images2,
     title: "Без посредников!",
-    text: "Зарегистрируйся и покупай автомобили самостоятельно.",
+    text: "Покупай автомобили самостоятельно.",
   },
 ];
 const Main = () => {
@@ -48,7 +48,6 @@ const Main = () => {
                 {el.title}
               </h6>
               <p className="project ">{el.text}</p>
-              <button className="main-btn blink-animate">РЕГИСТРАЦИЯ</button>
             </div>
           </div>
         ))}
